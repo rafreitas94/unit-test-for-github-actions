@@ -1,0 +1,19 @@
+name: 'Creating unit tests for mock calls from GithHub Actions'
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+    - run: npm run dist
+
+
+    - uses: ./github/dist/index.js

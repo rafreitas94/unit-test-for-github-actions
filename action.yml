@@ -1,0 +1,6 @@
+name: 'Unit Test for GitHub Actions'
+description: 'Creating unit tests for mock calls from GithHub Actions'
+
+runs:
+  using: 'node20'
+  main: 'dist/main.js'
