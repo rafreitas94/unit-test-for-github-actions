@@ -13,7 +13,7 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 20
-    - run: npm install --verbose & npm install -g @vercel/ncc & npm run dist
-
-
+    - run: npm install
+    - run: npm install -g @vercel/ncc
+    - run: npm run dist
     - run: ls -la
