@@ -16,4 +16,6 @@ jobs:
     - run: npm install
     - run: npm install -g @vercel/ncc
     - run: npm run dist
-    - run: ls -la
+    
+    - name: run node
+      run: node dist/index.js
