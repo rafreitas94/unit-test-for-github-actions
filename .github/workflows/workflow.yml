@@ -16,4 +16,4 @@ jobs:
     - run: npm install --verbose & npm run dist
 
 
-    - uses: ./github/dist/index.js
+    - run: ls -la
